@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STU182286-Introduction to Web Authoring-Submission deadline 8 April 2024- 1336 word count</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Underwater Explorer</h1>
+    <nav class="navbar">
+        <a href="diving.html">Diving</a>
+        <a href="beginner_guide.html">Beginner's Guide</a>
+        <a href="dive_spot.html">Dive Spot</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="interactive_hub.html">Interactive Hub</a>
+        <a href="contact_us.html">Contact Us</a>
+    </nav>
+
+    <div class="content">
+        <div id="Diving_forum" class="content-section">
+            <h2>Diving forum</h2>
+            <div id="comment_section">
+                <h3>Leave a Comment</h3>
+                <form method="post">
+                    <div class="form-group">
+                        <label for="user_namecom">Name:</label>
+                        <input type="text" id="user_namecom" name="user_namecom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user_comment">Comment:</label>
+                        <textarea id="user_comment" name="user_comment" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Submit Comment</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="Experience_gallery" class="content-section">
+            <h2>Experience gallery</h2>
+            <p style="text-indent: 0;">Share your amazing diving experiences by uploading your photos or videos below.</p>
+            <form id="upload_form" method="post">
+                <div class="form-group">
+                    <label for="user_nameex">Your Name:</label>
+                    <input type="text" id="user_nameex" name="user_nameex" required>
+                </div><br>
+                <div class="form-group">
+                    <label for="file_upload">Select Photo or Video:</label>
+                    <input type="file" id="file_upload" name="file_upload" accept="image/*,video/*" required>
+                </div><br>
+                 <div class="form-group">
+                    <button type="submit">Upload</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
